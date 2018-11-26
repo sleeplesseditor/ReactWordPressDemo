@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import DataStore from 'flux/stores/DataStore.js'
 
 class Home extends Component {
     render() {
+        let allData = DataStore.getAll();
+        console.log(allData); 
+
         return (
             <div>
                 <h2>Hello world!</h2>
